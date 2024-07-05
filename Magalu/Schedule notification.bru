@@ -1,0 +1,20 @@
+meta {
+  name: Schedule notification
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/notifications
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "dateTime": "2024-07-06T14:56:00",
+    "destination": "eduardomoiasantos@gmail.com",
+    "message": "Seja bem vindo!",
+    "channel": "EMAIL"
+  }
+}
